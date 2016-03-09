@@ -1,9 +1,11 @@
 #!/bin/bash
-git init 
+rm -rf *.html~
+rm -rf *~
 git add .
 git status
 echo "Enter commit message"
 commit=""
 read commit
 git commit -m "$commit"
-git push origin master
+git push origin gh-pages
+
